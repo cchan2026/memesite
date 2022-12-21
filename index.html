@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mobile Legends Memes</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <style>
+            body{
+                color: white;
+                background-color: rgba(24, 24, 185, 0.815);
+            }
+            nav{
+                height: 100px;
+                background-image: linear-gradient(to right, rgb(230, 25, 25), rgb(255, 252, 78), rgb(230, 25, 25));
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 400;
+            }
+            .dropdown-menu{
+                float: right;
+                font-family: 'Merriweather', cursive;
+                display: inline;
+                font-size: 25px;
+                text-align: center;
+                position: absolute;
+                z-index: 430;
+                box-shadow: 0px 8px 16px 8px rgba(139, 139, 139, 0.575);
+            }
+            nav img{
+                float: left;
+                margin-right: 50px;
+                position: relative;
+                top: -43px;
+            }
+            nav li{
+                background-color: gold;
+            }
+            .dropdown li a{
+                text-align: center;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 5px 20px;
+                text-decoration: none;
+                margin-left: 5px;
+                margin-right: 5px;
+
+            }
+            .dropdown li a:hover {
+                background-color: rgb(243, 198, 50);
+                color: white;
+                height: 100%;
+            }
+            .dropdown li a:active {
+                background-color: rgb(212, 138, 0);
+                color: white;
+                height: 100%
+            }
+            .row{
+                border-radius: 10px;
+                margin-top: 120px;
+                padding-left: 40px;
+                padding-right: 40px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+                grid-gap: 1rem;
+            }
+            section {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                background-color: rgb(255, 255, 255);
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                transform: translate(-50%, -50%);
+            }
+            section img{
+                display: block;
+                margin-top: 25px;
+                margin-bottom: 10px;
+                box-shadow: 5px 5px rgb(141, 141, 141);
+                object-fit: contain;
+                width: 100%;
+                height: auto;
+            }
+            h2 {
+                text-align: center;
+                position: relative;
+                top: 110px;
+                text-shadow: 5px 5px black;
+                font-size: 60px;
+                font-family: 'Times New Roman', Times, serif;
+                background-color: rgba(20, 20, 148, 0.815);
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            h4{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 40px;
+                color: black;
+                margin-top: 15px;
+                white-space: initial;
+                flex-wrap: wrap;
+            }
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                color:rgb(104, 104, 104);
+            }
+            .dropdown{
+                float: right;
+                position: relative;
+                top: 30px;
+            }
+            @media screen and (max-width: 800px){
+                .row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-radius: 10px;
+                    margin-top: 500px;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+                    grid-gap: 1rem;
+                }
+                .row:first-of-type{
+                    margin-top: 600px;
+                }
+                section{
+                        margin-top: 60px;
+                        margin-bottom: 60px;
+                }
+                section:last-of-type{
+                        margin-top: 200px;
+                }
+                }
+            @media screen and (max-width: 1200px){
+                h4{
+                    font-size: 30px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <img src="memeland_logo.png" alt="MEMEland Logo" width="540">
+            <div class="dropdown">
+                <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="dropDownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Memes</a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropDownMenuLink">
+                    <li><a class="dropdown-item" href="index.html">ML</a></li>
+                    <li><a class="dropdown-item" href="acad.html">ACADS</a></li>
+                    <li><a class="dropdown-item" href="random.html">RANDOM</a></li>
+                    <li><a class="dropdown-item" href="references.html">Reference</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <h2>Mobile Legends Memes</h2>
+        <div class="container"><div class="row">
+            <section class="col-sm-12">
+                <img src="memes_mlbb_1.jpg" alt="MLBB Meme 1">
+                <h4>He's right tho??</h4>
+                <p>It does make sense. Minions are necessities when it comes to pushing turrets!</p>
+            </section>
+            <section class="col-sm-12">
+                <img src="memes_mlbb_2.jpg" alt="MLBB Meme 2">
+                <h4>ML beginners do be like that sometimes</h4>
+                <p>Sometimes, beginners just have to stick to the tutorials instead of going straight into matches they can't handle.</p>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-sm-12">
+                <img src="memes_mlbb_3.jpg" alt="MLBB Meme 3">
+                <h4>This is unfair! :sob:</h4>
+                <p>My team is always like the Walmart version of Justice League</p>
+            </section>
+            <section class="col-sm-12">
+                <img src="memes_mlbb_4.jpg" alt="MLBB Meme 4">
+                <h4>Tanks are frontliners, too!</h4>
+                <p>WHHWHAHHAHWHHH I LOVE IT! The fact that tanks used to wear roaming masks to be the frontline roamer is just something that brings back memories.</p>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-sm-12">
+                <img src="memes_mlbb_5.jpg" alt="MLBB Meme 5">
+                <h4>Something I Just Can't Deny</h4>
+                <p>This is the reason why I only play ranked games when I have star protection cards lmao</p>
+            </section>
+            <section class="col-sm-12">
+                <img src="memes_mlbb_6.jpg" alt="MLBB Meme 6">
+                <h4>How cute!</h4>
+                <p>Another way to describe my teammates! (They're not cute unlike the teletubbies, tho...)</p>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-sm-12">
+                <img src="memes_mlbb_7.jpg" alt="MLBB Meme 7">
+                <h4>Oh, What A Field Trip</h4>
+                <p>Badang surely will enjoy having enemies that have no way of escaping his continuous skill attacks</p>
+            </section>
+            <section class="col-sm-12">
+                <img src="memes_mlbb_8.jpg" alt="MLBB Meme 8">
+                <h4>Thank You, Dear Tanks!</h4>
+                <p>We salute those tanks / roamer users that are able to properly support their team (except for that walking healing fountain lol)</p>
+            </section>
+        </div>
+        </div>
+    </body>
+
+</html>
